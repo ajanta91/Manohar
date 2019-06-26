@@ -1,0 +1,60 @@
+----- 1.1 (12 July 2018) ------
+New: WPML configuration file integrated
+New: Included Child theme
+New: Product Light-box Enable/Disable option in Theme Settings > Shop Page
+Fixed: Grouped product Add to Cart button
+Fixed: Shop grid page's product light-box
+Fixed: MailChimp subscribe from icon issue
+Fixed: Some CSS issues
+Tweak: Theme code structures and design patterns
+Tweak: Dropdown menu style
+
+
+----- 1.2 (16 July 2018) ------
+Fixed: Many CSS issues (including color correction, spacing issues, design issues etc)
+Fixed: Some responsive issues
+Fixed: Demo import issues
+New: Navbar layout and Menu Layout options added to Theme Settings > Header Settings > Navbar Styling
+New: Custom posts slug Re-write options added to Theme Settings > Slug Re-write
+New: Support mega menu with adding a class (mega-menu) to the menu item.
+Updated: Demo contents
+
+
+----- 1.3 (19 July 2018) ------
+Fixed: Some Elementor widget settings that wasn't working
+Fixed: Team post type
+Fixed: Some font icons (flaticon, themify icon, simple-line-icons) visibility in the Elemenotr page edit mode.
+New: Home Five and Home Six pages added to demo
+New: Hero Section Style Three.
+Tweak: Now, you can add multiple background shapes in the Portfolio Masonry section.
+Updated: Manohar Core plugin updated to 1.3 version
+
+
+----- 1.4 (23 July 2018) ------
+Fixed: Call to action background color change option
+Fixed: WooCommerce Products per row settings
+Fixed: Some responsive issues
+Tweak: Masonry Portfolio section
+New: Shop Categories with Thumbnail section
+New: Featured Products section
+New: Call to Action section style two and three
+New: Info with Icon section
+New: Image Features section style three
+New: Pre-loader Enable/Disable option in Theme Settings > General Settings
+
+
+----- 1.4.1 (24 July 2018) ------
+Updated: Demo contents
+Tweak: Affiliate product buy button
+Fixed: Manohar_contact_map.php file error
+
+
+----- 1.4.2 (31 July 2018) ------
+Fixed: Demo contents import error
+New: Home pages individual Elementor template backup included in the inc/demos/home_pages directory of the theme.
+New: Theme Support link included on the Theme Settings page's Help Tab on the right top corner.
+
+
+----- 1.5 (16 August 2018) ------
+Tweak: Portfolio category banner background image and subtitle option added to portfolio category edit page.
+Fixed: WooCommerce Wishlist icon on product grid, product listing and product details page.

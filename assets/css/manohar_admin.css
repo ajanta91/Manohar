@@ -1,0 +1,21 @@
+.information_boxes .redux_slides_add_remove,
+.information_boxes .upload_button_div {
+    display: none;
+}
+
+.redux-slides-list li input {
+    margin-bottom: 10px;
+}
+
+.notice.redux-message.redux-notice,
+.redux-dev-mode-notice-container {
+    display: none;
+}
+
+.redux-container-image_select .redux-image-select img {
+    opacity: .4;
+}
+
+.redux-container-image_select .redux-image-select.redux-image-select-selected img {
+    opacity: 1;
+}
