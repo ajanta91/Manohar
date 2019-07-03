@@ -41,6 +41,7 @@ function manohar_scripts() {
     wp_enqueue_style('material-design-icons', MANOHAR_DIR_CSS.'/mdi.min.css');
     wp_enqueue_style('fontawesome', MANOHAR_DIR_CSS.'/font-awesome.min.css');
     wp_register_style('slick', MANOHAR_DIR_CSS.'/slick.min.css');
+    wp_register_style('slicknav', MANOHAR_DIR_CSS.'/slicknav.min.css');
     wp_enqueue_style('animate', MANOHAR_DIR_CSS.'/animate.css');
     wp_register_style('flexslider', MANOHAR_DIR_VEND.'/flexslider/flexslider.css');
 
@@ -111,13 +112,12 @@ function manohar_scripts() {
     // Scripts
     $dynamic_js = '';
 	wp_enqueue_script( 'bootstrap', MANOHAR_DIR_JS.'/bootstrap.js', array('jquery'), '3.3.6', true );
-	wp_enqueue_script( 'smooth-scroll', MANOHAR_DIR_JS.'/smoothscroll.js', array('jquery'), '1.0', true );
 	wp_enqueue_script( 'viewport', MANOHAR_DIR_JS.'/viewport.js', array('jquery'), '1.0.0', true );
 	wp_enqueue_script( 'wow', MANOHAR_DIR_JS.'/wow.js', array('jquery'), '1.1.2', true );
 	wp_enqueue_script( 'slick', MANOHAR_DIR_VEND.'/slick/slick.min.js', array('jquery'), '1.6.0', true );
-    wp_enqueue_script( 'type-it', MANOHAR_DIR_JS.'/type-it.js', array('jquery'), '1.0', true );
-	wp_enqueue_script( 'bootsnav', MANOHAR_DIR_JS.'/bootsnav.js', array('jquery'), '1.0', true );
-	
+    
+	wp_enqueue_script( 'slicknav', MANOHAR_DIR_JS.'/jquery.slicknav.min.js', array('jquery'), '1.0', true );
+
 	wp_enqueue_script( 'bootstrap-select', MANOHAR_DIR_JS.'/bootstrap-select.min.js', array('jquery'), '1.12.4', true );
 	
 	wp_enqueue_script( 'manohar-master', MANOHAR_DIR_JS. '/master.js', array('jquery'), '1.0', true );

@@ -11,7 +11,7 @@ Redux::setSection('manohar_opt', array(
 			'subtitle'  => esc_html__('Footer Copyright text', 'manohar'),
 			'id'        => 'copyright_txt',
 			'type'      => 'editor',
-			'default'   => wp_kses_post(__('© 2018 <a href="http://droitthemes.com">DroitThemes</a>. All rights reserved', 'manohar')),
+			'default'   => wp_kses_post(__('© 2019 <a href="http://www.manoharinternational.com/">Manohar</a>. All rights reserved', 'manohar')),
 			'args'    => array(
 				'wpautop'       => true,
 				'media_buttons' => false,

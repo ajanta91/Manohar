@@ -12,6 +12,6 @@ if ( ! is_active_sidebar( 'sidebar_widgets' ) ) {
 }
 ?>
 
-<div class="col-md-3 blog_sidebar">
+<div class="col-md-3 col-xs-12 blog_sidebar">
 	<?php dynamic_sidebar( 'sidebar_widgets' ); ?>
 </div>

@@ -107,7 +107,6 @@ require get_template_directory() . '/inc/enqueue.php';
 // Custom functions
 require get_template_directory() . '/inc/manohar_functions.php';
 require get_template_directory() . '/inc/demo_config.php';
-require get_template_directory() . '/inc/cs_add_icons.php';
 
 // Theme options
 require get_template_directory() . '/options/opt-config.php';

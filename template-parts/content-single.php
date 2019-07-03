@@ -25,7 +25,7 @@ $post_video_url = isset($post_metas['post_video_url']) ? $post_metas['post_video
             <?php endif; ?>
         </div>
         <div class="post-info post-info-two post_content">
-            <?php if(function_exists('cs_get_option')) : ?>
+            
                 <ul class="post-meta nav">
                     <li>
                         <span><?php esc_html_e('By: ', 'manohar') ?> </span>
@@ -39,7 +39,6 @@ $post_video_url = isset($post_metas['post_video_url']) ? $post_metas['post_video
                 <div class="categories">
                     <?php the_category(', ') ?>
                 </div>
-            <?php endif; ?>
             <?php
             the_content();
             wp_link_pages( array(

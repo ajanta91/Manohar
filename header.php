@@ -3,19 +3,19 @@ $opt = get_option('manohar_opt');
 $is_preloader = !empty($opt['is_preloader']) ? $opt['is_preloader'] : '';
 
 $slides = !empty( $opt['opt-slides'] ) ? $opt['opt-slides'] : '';
-
 ?>
 
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
+
         <meta charset="<?php bloginfo('charset'); ?>">
         <!-- For IE -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- For Resposive Device -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <?php wp_head(); ?>
+
     </head>
 
 <body <?php body_class(); ?>>
@@ -27,14 +27,14 @@ $slides = !empty( $opt['opt-slides'] ) ? $opt['opt-slides'] : '';
             </div>
         </div>
     <?php } ?>
-
+    
     <!--=== Wrapper Start ===-->
     <div class="wrapper">
         <!--=== Header Start ===-->
         <header class="header_area">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-xs-12">
                         <div class="header_top">
                             <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
                                 <?php
@@ -55,20 +55,37 @@ $slides = !empty( $opt['opt-slides'] ) ? $opt['opt-slides'] : '';
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 col-xs-12">
                         <div class="header_top">
-                            <div class="translate_menu">
-	                            <?php echo do_shortcode('[gtranslate]'); ?>
-                            </div>
+                            <?php
+                            if( class_exists('GTranslate') ){
+                                ?>
+                                <div class="translate_menu">
+                                    <?php echo do_shortcode('[gtranslate]'); ?>
+                                </div>
+                                <?php 
+                            } ?>
                             <div class="call_to_action">
-                                <a href="#" class="header_top_phone"><i class="fa fa-phone"></i>+8801723-000000</a>
-                                <a href="#" class="cta_btn">Send Quote</a>
+                                
+                                <?php
+                                $call_to_phone = !empty( $opt['call_to_phone'] ) ? $opt['call_to_phone'] : '';
+                                $callToAction = !empty( $opt['call_to_action_link'] ) ? $opt['call_to_action_link'] : '';
+                                $quote_btn = !empty( $opt['quote_btn'] ) ? $opt['quote_btn'] : '';
+                                if( $call_to_phone ){
+                                    echo '<a href="tel:'.esc_html($call_to_phone).'" class="header_top_phone"><i class="fa fa-phone"></i>'.esc_html( $call_to_phone ).'</a>';
+                                }
+
+                                if( $quote_btn ){
+                                    echo '<a href="'.esc_url( $callToAction ).'" class="cta_btn">'.esc_html( $quote_btn ).'</a>';
+                                }
+                                ?>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row mobile_menu">
+                    <div class="col-md-12 col-xs-12">
                         <nav class="navbar navbar-default">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu_id" aria-expanded="false">
@@ -87,6 +104,7 @@ $slides = !empty( $opt['opt-slides'] ) ? $opt['opt-slides'] : '';
                                     'theme_location' => 'main_menu',
                                     'container_class' => 'collapse navbar-collapse',
                                     'container_id' => 'menu_id',
+                                    'menu_id'   => 'slick_mneu',
                                     'menu_class' => 'nav navbar-nav',
                                     'walker' => new Manohar_Nav_Navwalker,
                                     'fallback_cv' => 'Manohar_Nav_Navwalker::fallback',
@@ -103,8 +121,6 @@ $slides = !empty( $opt['opt-slides'] ) ? $opt['opt-slides'] : '';
 
         <?php // get_template_part('template-parts/header-parts/title', 'bar')
 
-
-
         if( is_array( $slides ) && count( $slides ) > 0 ) {
 	        ?>
             <section class="slider_area">
@@ -113,8 +129,6 @@ $slides = !empty( $opt['opt-slides'] ) ? $opt['opt-slides'] : '';
                         <div class="col-lg-12">
                             <div class="slider_wrap">
                                 <?php
-
-
                                 foreach ( $slides as $slide ) {
 	                                ?>
                                     <div class="single_slide">
@@ -122,7 +136,6 @@ $slides = !empty( $opt['opt-slides'] ) ? $opt['opt-slides'] : '';
                                     </div>
 	                                <?php
                                 } ?>
-
                             </div>
                         </div>
                     </div>

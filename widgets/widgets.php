@@ -26,13 +26,8 @@ add_action('widgets_init', function() {
 });
 
 
-// Register Widgets
-add_action('widgets_init', function() {
-    register_widget('Manohar_widget_recent_posts');
-});
 
-
-require get_template_directory() . '/widgets/Manohar_widget_recent_posts.php';
 require get_template_directory() . '/widgets/Manohar_newsletter_widget.php';
 require get_template_directory() . '/widgets/Manohar_product_list.php';
 require get_template_directory() . '/widgets/Manohar_download_btn.php';
+require get_template_directory() . '/widgets/Manohar_testimonial.php';

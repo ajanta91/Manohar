@@ -10,12 +10,18 @@
 get_header();
 $opt = get_option('manohar_opt');
 $blog_column = is_active_sidebar( 'sidebar_widgets' ) ? '8' : '12';
+$product_sidebar= $opt['shop_sidebar'];
 global $post;
 ?>
 
     <section class="white-bg sec_pad">
         <div class="container">
             <div class="row">
+                <?php
+                if( $product_sidebar == 'left' ){
+	                get_sidebar();
+                }
+                ?>
                 <div class="col-md-9">
 					<?php
 					while ( have_posts() ) : the_post();
@@ -74,7 +80,11 @@ global $post;
 						endif;
 					endif; ?>
                 </div>
-				<?php get_sidebar() ?>
+				<?php
+				if( $product_sidebar == 'right' ){
+					get_sidebar();
+				}
+				?>
             </div>
         </div>
     </section>

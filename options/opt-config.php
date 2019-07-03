@@ -182,7 +182,7 @@ $args = array(
 
 
 // Add content after the form.
-$args['footer_text'] = esc_html__( 'Copyright Manohar &copy; 2018 ', 'manohar' );
+$args['footer_text'] = esc_html__( 'Copyright Manohar &copy; 2019', 'manohar' );
 
 Redux::setArgs( $opt_name, $args );
 
@@ -198,11 +198,6 @@ $tabs = array(
 	array(
 		'id'      => 'theme_help_links',
 		'title'   => esc_html__( 'Theme help links', 'manohar' ),
-		'content' => wp_kses(__( '
-						<p><a href="http://docs.droitthemes.com/docs/manohar">Documentation</a></p>
-						<p><a href="http://droitthemes.com/ticket/">Ticket</a></p>
-						<p><a href="http://docs.droitthemes.com/docs/manohar-wordpress-theme/change-logs/">Theme changes log</a></p>
-						', 'manohar' ), $allowed_string)
 	),
 );
 Redux::setHelpTab( $opt_name, $tabs );

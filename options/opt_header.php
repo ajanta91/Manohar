@@ -72,3 +72,42 @@ Redux::setSection('manohar_opt', array(
 		),
 	)
 ) );
+
+
+Redux::setSection('manohar_opt', array(
+	'title'            => esc_html__( 'Call To Action', 'manohar' ),
+	'id'               => 'call_to_action',
+	'subsection'       => true,
+	'icon'             => 'dashicons dashicons-phone',
+	'fields'           => array(
+		array(
+			'title'     => esc_html__('Phone Number', 'manohar'),
+			'subtitle'  => esc_html__( 'The empty field would not display anything', 'manohar' ),
+			'id'        => 'call_to_phone',
+			'type'      => 'text',
+			'compiler'  => true,
+			'default'   => esc_html__( '+8801723-664041', 'manohar' ) 
+		),
+		array(
+			'title'     => esc_html__('Quote Button Label', 'manohar'),
+			'subtitle'  => esc_html__( 'The empty field would not display anything', 'manohar' ),
+			'id'        => 'quote_btn',
+			'type'      => 'text',
+			'compiler'  => true,
+			'default'   => esc_html__( 'Send Quote', 'manohar' )
+			
+		),	
+		array(
+			'title'     => esc_html__('Send Quote Link', 'manohar'),
+			'subtitle'  => esc_html__( 'Quote link here', 'manohar' ),
+			'id'        => 'call_to_action_link',
+			'type'      => 'text',
+			'compiler'  => true,
+			'placeholder'=> esc_html__( 'https://call-to-action-url.com', 'manohar' ),
+			'default'   => ''
+			
+		)		
+		
+		
+	)
+) );

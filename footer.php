@@ -11,7 +11,7 @@
 
 $opt = get_option('manohar_opt');
 
-$copyright_text = !empty($opt['copyright_txt']) ? $opt['copyright_txt'] : esc_html__('© 2018 DroitThemes. All rights reserved', 'manohar');
+$copyright_text = !empty($opt['copyright_txt']) ? $opt['copyright_txt'] : esc_html__('© 2019 Manohar. All rights reserved', 'manohar');
 $footer_logo_url = !empty($opt['footer_logo_url']) ? $opt['footer_logo_url'] : '';
 
 ?>
@@ -52,6 +52,7 @@ $footer_logo_url = !empty($opt['footer_logo_url']) ? $opt['footer_logo_url'] : '
                     </div>
                 </div>
             <?php endif; ?>
+
 
         </div>
     </div>

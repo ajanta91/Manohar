@@ -116,10 +116,7 @@
     .service_video {
         margin-top: 60px
     }
-    .blog_sidebar,
-    .cart_total_box {
-        margin-top: 80px
-    }
+
     .blog-grid-video.pr-30 {
         padding-right: 0
     }
@@ -214,7 +211,7 @@
     .header_area.affix .navbar .nav li,
     .navbar .nav li {
         margin: 0;
-        padding: 10px 0
+
     }
     .navbar .nav li.active a,
     .navbar .nav li.active a:focus,
@@ -491,6 +488,73 @@
     .portfolio_details_content h2 {
         margin-top: 10px
     }
+
+    .translate_menu{
+        margin-top: 0;
+    }
+    .translate_menu .switcher{
+        width: 80px;
+    }
+    .call_to_action{
+        display: inline-block;
+    }
+    a.header_top_phone, a.cta_btn{
+        margin-top: 0;
+        padding: 6px 8px;
+    }
+    .switcher .selected{
+        background: none!important;
+    }
+    .switcher .selected a {
+        padding: 7px 5px !important;
+        width: 68px!important;
+        border-radius: 20px;
+    }
+    .header_top{
+        display: flex;
+
+    }
+
+    .mobile_menu{
+        position: absolute;
+        top: 32px;
+        right: 0;
+        z-index: 99999;
+        width: 100%;
+    }
+    .slider_wrap{
+        margin-top: 40px;
+    }
+    #menu_id{
+        width: 100%;
+        background: rgb(34, 34, 34);
+
+
+    }
+    .navbar .nav li a{
+        padding: 10px;
+        background: none;
+        color: #fff;
+        margin: 0 15px;
+        border-radius: 0;
+        transition: 0.5s;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbar .nav li a:hover, .navbar .nav li.active a, .navbar-default .navbar-nav>.active>a:focus{
+        background: none !important;
+        color: red;
+    }
+    .navbar-default .navbar-toggle{
+        height: initial;
+        margin-top: 30px;
+
+    }
+    .white-bg.sec_pad{
+        padding-top: 0;
+    }
+
 }
 
 @media (max-width:480px) {
@@ -575,6 +639,9 @@
     .cbp-item {
         width: 100%
     }
+    .navbar .nav li.dropdown .dropdown-menu li:hover .dropdown-menu{
+        position: static;
+    }
 }
 
 @media(max-width:360px) {
@@ -627,3 +694,4 @@
         margin-top: 0!important
     }
 }
+

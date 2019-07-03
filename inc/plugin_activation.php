@@ -55,6 +55,11 @@ function manohar_register_required_plugins() {
             'slug'      => 'one-click-demo-import',
             'required'  => false,
         ),
+        array(
+            'name'      => esc_html__('Google Translate ', 'manohar'),
+            'slug'      => 'gtranslate',
+            'required'  => false,
+        ),
 	);
 
 	/*

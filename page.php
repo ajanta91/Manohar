@@ -21,7 +21,7 @@ while ( have_posts() ) : the_post();
         <div class="container page-content">
             <div class="row">
 	            <?php get_sidebar(); ?>
-                <div class="col-lg-9">
+                <div class="col-lg-9 col-xs-12">
                     <div class="post_content">
                         <?php
                         the_content();

@@ -1,0 +1,36 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">post_metas</custom-field>
+        <custom-field action="translate">page_metas</custom-field>
+        <custom-field action="translate">portfolio_metas</custom-field>
+        <custom-field action="translate">service_metas</custom-field>
+        <custom-field action="translate">team_metas</custom-field>
+    </custom-fields>
+    <admin-texts>
+        <key name="manohar_opt">
+
+            <key name="error_heading" />
+            <key name="error_title" />
+            <key name="error_subtitle" />
+            <key name="error_home_btn_label" />
+
+            <key name="blog_title" />
+            <key name="blog_subtitle" />
+            <key name="blog_read_more" />
+            <key name="related_posts_title" />
+            <key name="place_name" />
+            <key name="copyright_txt" />
+
+            <key name="menu_btn_label" />
+
+            <key name="related_service_title" />
+            <key name="related_service_subtitle" />
+
+            <key name="shop_title" />
+            <key name="shop_subtitle" />
+
+            <key name="related_service_title" />
+
+        </key>
+    </admin-texts>
+</wpml-config>

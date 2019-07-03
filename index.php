@@ -51,5 +51,7 @@ if( $layout == 2 ){
         </div>
     </section>
 
+
+
 <?php
 get_footer();
